@@ -110,6 +110,6 @@ btnSubmit.addEventListener('click', (e) => {
         let word = selectedArray[Math.floor(Math.random() * selectedArray.length)].toUpperCase().split("");
         localStorage.setItem('username', username.value);
         localStorage.setItem('word', JSON.stringify(word));
-        location.href = "/html/game.html";
+        location.href = "./html/game.html";
     }
 });
