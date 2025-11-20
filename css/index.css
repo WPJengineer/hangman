@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, .form-group {
+    font-size: 18px;
+}
+
+#username, #password, #collection {
+    height: 25px;
+    border-radius: 5px;
+}
+
+#username:focus, #password:focus, #collection:focus {
+    border: none;
+    outline: 2px solid var(--yellow);
+}
+
+.usernameInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form-group.error small {
+    visibility: visible;
+}
+
+.correct input {
+    border-color: var(--green);
+}
+
+.form-group.error input {
+  border-color: var(--red);
+}
+
+.form-group small {
+    color: var(--red);
+    visibility: hidden;
+}
+
+.loginMenu input[type="submit"] {
+    padding: 10px;
+    background-color: var(--yellow);
+    color: var(--dark);
+    border-radius: 30px;
+    font-family: 'afacad';
+    font-size: 24px;
+}
+
+.loginMenu input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.loginMenu input[type="submit"]:active {
+    margin-left: 2px 2px 0;
+    box-shadow: -2px -2px 1px var(--black);
+}

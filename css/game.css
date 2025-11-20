@@ -1,0 +1,169 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#returnBtn {
+    padding: 5px;
+    background-color: var(--tiles);
+    color: var(--light);
+    border-radius: 30px;
+    font-family: 'afacad';
+    font-size: 20px;
+}
+
+#returnBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.mainGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.leaderboards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboard {
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.leaderboard th, .leaderboard td {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.no-data {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#no-data-msg {
+    display: none;
+}
+
+.hangImage {
+    display: flex;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 36px;
+    color: var(--dark);
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+main p {
+    font-size: 18px;
+}
+
+.wordToGuess {
+    font-size: 30px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.keyboard div:last-child {
+    justify-content: center;
+}
+
+.letter {
+    width: 50px;
+    height: 50px;
+    background-color: var(--tiles);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 2px var(--black);
+}
+
+.letter:hover, .choice button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.letter:active, .choice button:active {
+    margin-left: 2px 2px 0;
+    box-shadow: -2px -2px 1px var(--black);
+}
+
+.highlight {
+    color: var(--blue);
+}
+
+.timer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.countdown p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.countdown p:nth-child(2) {
+    color: var(--blue);
+}
+
+.popup {
+    position: absolute;
+    background-color: var(--light);
+    color: var(--dark);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 2px 2px var(--black);
+}
+
+.popup p {
+    font-size: 28px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choice button {
+    padding: 10px;
+    background-color: var(--yellow);
+    color: var(--dark);
+    border-radius: 30px;
+    font-family: 'afacad';
+    font-size: 24px;
+    box-shadow: 4px 2px 2px var(--black);
+}

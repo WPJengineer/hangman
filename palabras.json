@@ -1,0 +1,212 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "palabra": "elefant"
+        },
+        {
+            "id": 2,
+            "palabra": "girafa"
+        },
+        {
+            "id": 3,
+            "palabra": "pingui"
+        },
+        {
+            "id": 4,
+            "palabra": "cangur"
+        },
+        {
+            "id": 5,
+            "palabra": "dofi"
+        },
+        {
+            "id": 6,
+            "palabra": "cocodril"
+        },
+        {
+            "id": 7,
+            "palabra": "papallona"
+        },
+        {
+            "id": 8,
+            "palabra": "pop"
+        },
+        {
+            "id": 9,
+            "palabra": "tigre"
+        },
+        {
+            "id": 10,
+            "palabra": "lloro"
+        }
+    ],
+    "esports": [
+        {
+            "id": 1,
+            "palabra": "futbol"
+        },
+        {
+            "id": 2,
+            "palabra": "basquet"
+        },
+        {
+            "id": 3,
+            "palabra": "tennis"
+        },
+        {
+            "id": 4,
+            "palabra": "natacio"
+        },
+        {
+            "id": 5,
+            "palabra": "voleibol"
+        },
+        {
+            "id": 6,
+            "palabra": "golf"
+        },
+        {
+            "id": 7,
+            "palabra": "boxa"
+        },
+        {
+            "id": 8,
+            "palabra": "ciclisme"
+        },
+        {
+            "id": 9,
+            "palabra": "atletisme"
+        },
+        {
+            "id": 10,
+            "palabra": "esqui"
+        }
+    ],
+    "objectes": [
+        {
+            "id": 1,
+            "palabra": "cadira"
+        },
+        {
+            "id": 2,
+            "palabra": "finestra"
+        },
+        {
+            "id": 3,
+            "palabra": "llapis"
+        },
+        {
+            "id": 4,
+            "palabra": "quadern"
+        },
+        {
+            "id": 5,
+            "palabra": "tisores"
+        },
+        {
+            "id": 6,
+            "palabra": "ampolla"
+        },
+        {
+            "id": 7,
+            "palabra": "paraigua"
+        },
+        {
+            "id": 8,
+            "palabra": "mirall"
+        },
+        {
+            "id": 9,
+            "palabra": "motxilla"
+        },
+        {
+            "id": 10,
+            "palabra": "telefon"
+        }
+    ],
+    "fruita": [
+        {
+            "id": 1,
+            "palabra": "poma"
+        },
+        {
+            "id": 2,
+            "palabra": "platan"
+        },
+        {
+            "id": 3,
+            "palabra": "maduixa"
+        },
+        {
+            "id": 4,
+            "palabra": "tomaquet"
+        },
+        {
+            "id": 5,
+            "palabra": "sindria"
+        },
+        {
+            "id": 6,
+            "palabra": "pinya"
+        },
+        {
+            "id": 7,
+            "palabra": "cogombre"
+        },
+        {
+            "id": 8,
+            "palabra": "alvocat"
+        },
+        {
+            "id": 9,
+            "palabra": "melo"
+        },
+        {
+            "id": 10,
+            "palabra": "melicoto"
+        }
+    ],
+    "professions": [
+        {
+            "id": 1,
+            "palabra": "mestre"
+        },
+        {
+            "id": 2,
+            "palabra": "enginyer"
+        },
+        {
+            "id": 3,
+            "palabra": "metge"
+        },
+        {
+            "id": 4,
+            "palabra": "artista"
+        },
+        {
+            "id": 5,
+            "palabra": "bomber"
+        },
+        {
+            "id": 6,
+            "palabra": "cientific"
+        },
+        {
+            "id": 7,
+            "palabra": "music"
+        },
+        {
+            "id": 8,
+            "palabra": "pages"
+        },
+        {
+            "id": 9,
+            "palabra": "arquitecte"
+        },
+        {
+            "id": 10,
+            "palabra": "pilot"
+        }
+    ]
+}

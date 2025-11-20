@@ -1,0 +1,30 @@
+:root {
+    --dark: #242333;
+    --tiles: #444451;
+    --light: #fcfcfc;
+    --black: #0f0f0f;
+    --green: #31e721;
+    --red: #fa0606;
+    --blue: #6feaf6;
+    --yellow: #eeff00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "afacad";
+    src: url(../fonts/afacad.ttf);
+}
+
+body {
+    height: 100vH;
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: 'afacad';
+}

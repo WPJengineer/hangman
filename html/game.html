@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <header>
+        <button id="returnBtn">Torna</button>
+    </header>
+    <main>
+        <div class="leaderboards">
+            <h2>Leaderboard</h2>
+            <div class="leaderboard-container">
+                <table class="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Ranking</th>
+                            <th>Nom</th>
+                            <th>Paraula</th>
+                            <th>Temps</th>
+                            <th>Errors</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body"></tbody>
+                    <p id="no-data-msg" class="no-data">
+                        Encara no hi ha puntuacions registrades.
+                    </p>
+                </table>
+            </div>
+        </div>
+        <div class="mainGame">
+            <h2>El Joc del Penjat</h2>
+            <p>Seleccioni una lletra, li queden <span class="highlight" id="attempts">6</span> intents.</p>
+            <div class="wordToGuess">GUESS</div>
+            <div class="keyboard">
+                <div class="row">
+                    <div class="letter">A</div>
+                    <div class="letter">B</div>
+                    <div class="letter">C</div>
+                    <div class="letter">D</div>
+                    <div class="letter">E</div>
+                    <div class="letter">F</div>
+                    <div class="letter">G</div>
+                    <div class="letter">H</div>
+                </div>
+                <div class="row">
+                    <div class="letter">I</div>
+                    <div class="letter">J</div>
+                    <div class="letter">K</div>
+                    <div class="letter">L</div>
+                    <div class="letter">M</div>
+                    <div class="letter">N</div>
+                    <div class="letter">Ñ</div>
+                    <div class="letter">O</div>
+                </div>
+                <div class="row">
+                    <div class="letter">P</div>
+                    <div class="letter">Q</div>
+                    <div class="letter">R</div>
+                    <div class="letter">S</div>
+                    <div class="letter">T</div>
+                    <div class="letter">U</div>
+                    <div class="letter">V</div>
+                    <div class="letter">W</div>
+                </div>
+                <div class="row">
+                    <div class="letter">X</div>
+                    <div class="letter">Y</div>
+                    <div class="letter">Z</div>
+                </div>
+            </div>
+            <p>Has comès <span class="highlight" id="errors">0</span> errors</p>
+            <div class="countdown">
+                <p>Temps restant:</p>
+                <p>10</p>
+            </div>
+            <div class="timer">
+                <p>Temps total:</p>
+                <p>00:00:00</p>
+            </div>
+            <div class="popup">
+                <h1></h1>
+                <p>Què vols fer?</p>
+                <div class="choice">
+                    <button id="tornar-jugar">Reintentar</button>
+                    <button id="nou-paraula">Canvia la paraula</button>
+                </div>
+            </div>
+        </div>
+        <div class="hangImage">
+            <img src="../images/0.png" alt="hangman-image">
+        </div>
+    </main>
+    <script src="../js/game.js"></script>
+</body>
+</html>
