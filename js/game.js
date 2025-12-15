@@ -1,7 +1,5 @@
 // waits for the whole page to load before starting program.
 window.addEventListener("DOMContentLoaded", () => {
-
-    console.log('hello');
     
     const wordToGuess = document.querySelector(".wordToGuess");
     const buttons = document.querySelectorAll(".keyboard .row .letter");
