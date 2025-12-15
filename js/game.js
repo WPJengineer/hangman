@@ -190,74 +190,80 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // leaderboards table sets up onload of page.
     // gets leaderboard that all our data stored in localStorage that we have added to it over playing all the gaems that wehave played.
-    const row = localStorage.getItem("leaderboard");
-    if (!row) {
-        noDataMsg.style.display = "block";
-        return;
-    }
+    function renderLeaderboard() {
 
-    // build the object to them throw into the tables.
-    let scoresObj;
-
-    try {
-        scoresObj = JSON.parse(row);
-    } catch (error) {
-        console.error("Error parsing leaderboard:", error);
-        noDataMsg.style.display = "block";
-        return;
-    }
-
-    // breakdown the object into each atribute and then throw into an array to then finally separate into each column of our table.
-    const entries = [];
-
-    for (const username in scoresObj) {
-        const words = scoresObj[username];
-        for (const usedWord in words) {
-            const entry = words[usedWord];
-            entries.push({
-                name: username,
-                word: usedWord,
-                time: entry.time,
-                errors: entry.errors
-            });
+        const row = localStorage.getItem("leaderboard");
+        if (!row) {
+            noDataMsg.style.display = "block";
+            return;
         }
-    }
 
-    if (entries.length === 0) {
-        noDataMsg.style.display = "block";
-        return;
-    }
+        // build the object to them throw into the tables.
+        let scoresObj;
 
-    // Sort by time and then errors committed
-    entries.sort((a, b) => {
-        if (a.time !== b.time) {
-            return a.time - b.time;
+        try {
+            scoresObj = JSON.parse(row);
+        } catch (error) {
+            console.error("Error parsing leaderboard:", error);
+            noDataMsg.style.display = "block";
+            return;
         }
-        return a.errors - b.errors;
-    });
 
-    // Render rows
-    entries.forEach((entry, index) => {
-        const tr = document.createElement("tr");
-        const rankTd = document.createElement("td");
-        rankTd.textContent = index + 1;
-        const nameTd = document.createElement("td");
-        nameTd.textContent = entry.name;
-        const wordTd = document.createElement("td");
-        wordTd.textContent = entry.word;
-        const timeTd = document.createElement("td");
-        timeTd.textContent = entry.time + "s";
-        const errorsTd = document.createElement("td");
-        errorsTd.textContent = entry.errors;
+        // breakdown the object into each atribute and then throw into an array to then finally separate into each column of our table.
+        const entries = [];
 
-        tr.appendChild(rankTd);
-        tr.appendChild(nameTd);
-        tr.appendChild(wordTd);
-        tr.appendChild(timeTd);
-        tr.appendChild(errorsTd);
+        for (const username in scoresObj) {
+            const words = scoresObj[username];
+            for (const usedWord in words) {
+                const entry = words[usedWord];
+                entries.push({
+                    name: username,
+                    word: usedWord,
+                    time: entry.time,
+                    errors: entry.errors
+                });
+            }
+        }
 
-        tbody.appendChild(tr);
-    });
+        if (entries.length === 0) {
+            noDataMsg.style.display = "block";
+            return;
+        }
+
+        // Sort by time and then errors committed
+        entries.sort((a, b) => {
+            if (a.time !== b.time) {
+                return a.time - b.time;
+            }
+            return a.errors - b.errors;
+        });
+
+        // Render rows
+        entries.forEach((entry, index) => {
+            const tr = document.createElement("tr");
+            const rankTd = document.createElement("td");
+            rankTd.textContent = index + 1;
+            const nameTd = document.createElement("td");
+            nameTd.textContent = entry.name;
+            const wordTd = document.createElement("td");
+            wordTd.textContent = entry.word;
+            const timeTd = document.createElement("td");
+            timeTd.textContent = entry.time + "s";
+            const errorsTd = document.createElement("td");
+            errorsTd.textContent = entry.errors;
+
+            tr.appendChild(rankTd);
+            tr.appendChild(nameTd);
+            tr.appendChild(wordTd);
+            tr.appendChild(timeTd);
+            tr.appendChild(errorsTd);
+
+            tbody.appendChild(tr);
+        });
+
+    }
+
+    renderLeaderboard();
 
 
     // EVENTOS
